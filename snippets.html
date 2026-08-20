@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="${1:und}" dir="${2|auto,ltr,rtl|}" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+
+  <!-- Character encoding: allows the email to display text and special characters correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Helps older versions of Internet Explorer use the latest rendering mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Helps the email adapt to different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+  <!-- Helps prevent some email clients from automatically turning content into links -->
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+
+  <!-- Prevents Apple Mail from automatically changing the email's formatting -->
+  <meta name="x-apple-disable-message-reformatting">
+
+  <!-- Name of the email document -->
+  <title>${3:Email}</title>
+
+  <!-- Outlook-specific settings -->
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+
+  <!--
+    MSO = Microsoft Outlook.
+
+    The container snippet uses class="mso" on its Outlook ghost table.
+    These styles help reset and control that Outlook-only table.
+  -->
+  <style>
+    .mso {
+      mso-cellspacing: 0;
+      padding: 0;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+
+</head>
+
+<!--
+  BODY
+
+  The main canvas of the email.
+
+  margin:0 and padding:0 remove unwanted default spacing.
+-->
+<body class="body" style="margin:0; padding:0;">
+
+  <!--
+    EMAIL WRAPPER
+
+    This wraps the entire email content.
+
+    role="article" gives the email meaningful structure for assistive technology.
+    aria-label describes the email.
+    lang sets the language.
+    dir sets the text direction.
+  -->
+  <div class="wrapper" role="article" aria-label="${3:Email}" lang="${1:und}" dir="${2|auto,ltr,rtl|}" style="font-size:medium; font-size:max(16px, 1rem);">
+
+    <!--
+      INSERT EMAIL CONTENT HERE
+
+      Type "container" here to insert your reusable
+      single-column email container snippet.
+    -->
+
+    $0
+
+  </div>
+  <!-- END EMAIL WRAPPER -->
+
+</body>
+
+</html>
