@@ -33,9 +33,36 @@
     }
 		.contentlayout {
 			margin:0 0 16px 0;
-			line-height: 1.5;
+			line-height: 1.5em;
 		}
+
+    @media screen and (max-width:480px) {
+      .media480 {
+          
+      }
+      h1 {font-size: 25px;}
+      h2 {font-size: 20px;}
+      ul li {line-height: 1.3em;}
+
+    }
+    @media screen and (max-width: 450px) {
+      .cta {display: block !important;
+            margin: 0 1em !important;
+            text-align: center;}
+    }
+      @media screen and (max-width:480px) {
+      .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+    }
+      .column-img {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
   </style>
+
 </head>
 
 <body class="body" style="margin:0; padding:0; background:#413e3e;">
@@ -97,21 +124,21 @@
 
 
           <!-- EMAIL HEADING -->
-              <h1 style="margin:0 0 16px 0; text-align:left; color:#5c5757; line-height: 1.5;">
+              <h1 class="contentlayout media480" style="margin:0 0 16px 0; text-align:left; color:#5c5757; line-height: 1.5;">
           Sound that moves with you.
         </h1>
 
           <!-- SUBHEADING -->
-          <h2 class="contentlayout">
+          <h2 class="contentlayout media480">
             Your next favourite listening experience is waiting.
           </h2>
 
             <!-- EMAIL BODY TEXT -->
-          <p class="contentlayout">
+          <p class="contentlayout media480">
             Meet the sound that keeps up with every moment — from your morning commute to your late-night playlist.
           </p>
 
-          <p class="contentlayout">
+          <p class="contentlayout media480">
             With powerful, immersive audio, all-day comfort, and a design that stands out, these headphones are built to keep you connected to the music you love.
           </p>
 
@@ -124,11 +151,10 @@
         
           <div class="ctawrapper" > <!-- This is the cta div container-->
                 <!-- CTA LINK -->
-      <a href="https://www.beatsbydre.com/" style="background-color:rgb(248, 29, 58); color:#FCFDFF; text-decoration:none; display:inline-block; padding:.5em 2em; mso-padding-alt:0; text-underline-color:#1781ec; font-weight: 600; border-radius: 3px; "><!--[if mso]><i style="mso-font-width:200%;mso-text-raise:100%">&#8203;&emsp;</i><span style="mso-text-raise:50%;"><![endif]-->SHOP NOW<!--[if mso]></span><i style="mso-font-width:200%;">&emsp;&#8203;</i><![endif]--></a>
+              <a class="cta" href="https://www.beatsbydre.com/" style="background-color:rgb(248, 29, 58); color:#FCFDFF; text-decoration:none; display:inline-block; padding:.5em 2em; mso-padding-alt:0; text-underline-color:#1781ec; font-weight: 600; border-radius: 3px; "><!--[if mso]><i style="mso-font-width:200%;mso-text-raise:100%">&#8203;&emsp;</i><span style="mso-text-raise:50%;"><![endif]-->SHOP NOW<!--[if mso]></span><i style="mso-font-width:200%;">&emsp;&#8203;</i><![endif]--></a>
 
-          </div>
+      </div>
 
-    
       <ul style="padding: 10px 30px; font-family: Arial, sans-serif; font-size: 16px; color: #333333; line-height: 1.5; list-style: square; padding-left: 50px; background-color: #e9e5e5;">
       <li style="margin-bottom: 10px;"><strong>Active Noise Cancelling (ANC):</strong> Blocks out the world so you can focus on your music.</li>
       <li style="margin-bottom: 10px;"><strong>40-Hour Battery Life:</strong> Keep the vibe going all day and night.</li>
@@ -136,29 +162,48 @@
       <li style="margin-bottom: 0;"><strong>Universal Compatibility:</strong> Pairs seamlessly with both Apple and Android devices.</li>
       </ul>
 
-
-
-
-
-
-
-
-
       </div>
-      <!-- END MAIN EMAIL CONTAINER -->
 
-      <!--[if mso]>
+        <!--[if true]>
+    <table class="mso" role="presentation" width="100%">
+      <tr>
+    <![endif]-->
+    <div style="display:table;width:100%;">
+        <!--[if true]>
+          <td width="50%">
+        <![endif]-->
+        <div style="display:table-cell;width:50%">
+          Column 1 content
+        </div>
+        <!--[if true]>
           </td>
-          <td></td>
-        </tr>
-      </table>
-      <![endif]-->
-
+          <td width="50%">
+        <![endif]-->
+        <div style="display:table-cell;width:50%">
+          Column 2 content
+        </div>
+        <!--[if true]>
+          </td>
+        <![endif]-->
     </div>
+        <!--[if true]>
+          </tr>
+        </table>
+        <![endif]-->
+          <!-- END MAIN EMAIL CONTAINER -->
+
+          <!--[if mso]>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+          <![endif]-->
+
+        </div>
     <!-- END OUTER BACKGROUND -->
 
   </div>
   <!-- END EMAIL WRAPPER -->
 
 </body>
-</html>
+</html>>
