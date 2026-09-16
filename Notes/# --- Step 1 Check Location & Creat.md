@@ -20,7 +20,7 @@ cd ..                                # 5. Return to the root project folder
 
 cp logo.png images/                  # 6. Copy logo.png into the "images" folder
 
-mv old-email.html archive/           # 7. Move old-email.html into "archive"
+mv old-email.html archive/        # 7. Move old-email.html into "archive"
 
 cp -r components templates/          # 8. Copy the "components" folder into "templates"
 
