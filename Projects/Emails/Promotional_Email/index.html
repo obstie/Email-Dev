@@ -121,7 +121,7 @@ wrapper
 
 </div> <!-- email nav text,ends here--> 
 
- <div class="Hero_section" style="padding-top: 20px; text-align: center; border-bottom: 3px solid grey; padding-bottom: 20px; display: table;">
+<div class="Hero_section" style="padding-top: 20px; text-align: center; border-bottom: 3px solid grey; padding-bottom: 20px; display: table;">
 <!--[if mso]>
 <table>
     <tr>
@@ -154,25 +154,61 @@ wrapper
 <![endif]-->
 </div>   <!-- email hero sec,ends here--> 
 
+<div class="product_section" style="width: 100%; text-align: center; border-bottom: 3px solid grey;">    <!-- email product section, starts here--> 
 
-<div class="product_section" style="display: table; width: 100%; text-align: center; border-bottom: 3px solid grey;"> <!-- email product section, starts here--> 
-<!--[if mso]>
-<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-        <td width="100%" align="center" style="padding: 10px; font-size: 20px;">
-<![endif]-->
-<h2 style="margin: 0; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 22px; line-height: 28px; font-weight: bold; color: #111111; text-align: center;">
+  <!-- Heading (visible to all clients naturally) -->
+  <h2 style="margin: 0; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 22px; line-height: 28px; font-weight: bold; color: #111111;">
     Feature Deals
-</h2>
-    <div style="display: table-cell; width: 100%;">
+  </h2>
 
-    </div>   
-<!--[if mso]>
-</td>
-</tr>
-</table>
-<![endif]-->                    
-</div> <!-- email product section, ends here--> 
+  <!-- 1. Open Outlook Ghost Table -->
+  <!--[if mso]>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top" style="width: 33.33%; padding: 10px;">
+  <![endif]-->
+
+  <!-- Column 1 (Modern Clients) -->
+  <div style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; box-sizing: border-box;">
+    <!-- Column 1 Content Here -->
+    <a href="https://example.com/product" target="_blank" style="text-decoration: none; display: block;">
+  <img src="https://example.com/images/product-image.jpg" 
+       alt="Featured Product Name" 
+       width="600" 
+       style="display: block; width: 100%; max-width: 600px; height: auto; border: 0; outline: none; margin: 0 auto;">
+</a>
+  </div>
+
+  <!-- 2. Close Col 1 / Open Col 2 for Outlook -->
+  <!--[if mso]>
+      </td>
+      <td width="200" valign="top" style="width: 33.33%; padding: 10px;">
+  <![endif]-->
+
+  <!-- Column 2 (Modern Clients) -->
+  <div style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; box-sizing: border-box;">
+    <!-- Column 2 Content Here -->
+  </div>
+
+  <!-- 3. Close Col 2 / Open Col 3 for Outlook -->
+  <!--[if mso]>
+      </td>
+      <td width="200" valign="top" style="width: 33.33%; padding: 10px;">
+  <![endif]-->
+
+  <!-- Column 3 (Modern Clients) -->
+  <div style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; box-sizing: border-box;">
+    <!-- Column 3 Content Here -->
+  </div>
+
+  <!-- 4. Close Outlook Table -->
+  <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+
+</div>   <!-- email product section, ends here--> 
 
 
 
@@ -184,7 +220,7 @@ wrapper
 
 
     </div> <!-- email content,ends here-->
- <!--[if mso]>
+<!--[if mso]>
 </td>
 </tr>
 </table>
@@ -195,6 +231,6 @@ wrapper
 </div> <!-- email wrapper,ends here-->
 
 </div> <!-- email body,ends here-->
-  
+
 </body>
 </html>
