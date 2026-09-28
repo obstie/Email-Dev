@@ -1,4 +1,4 @@
-# NEXUS TECH --- Welcome Email #2
+# Welcome Email #2
 
 ## Email Development Learning Project
 
@@ -9,7 +9,7 @@ strengthening the email-development fundamentals learned in the first
 Nexus Tech project.
 
 ------------------------------------------------------------------------
-<img src="" alt="Project Screenshot" width="600">r
+
 ## 1. Project Purpose
 
 This is the **second practical email in the Nexus Tech portfolio**.
@@ -23,10 +23,9 @@ The main lesson is:
 
 > **Build a clean email from a clear structure, control spacing, create
 > a proper CTA, and make the HTML easier to maintain.**
+I am not trying to make this email unnecessarily complicated.
 
-We are not trying to make this email unnecessarily complicated.
-
-Each project should teach a small number of useful skills that we carry
+Each project should teach a small number of useful skills that I carry
 into the next project.
 
 ------------------------------------------------------------------------
@@ -35,8 +34,7 @@ into the next project.
 
 The mockup is a **design reference**, not a pixel-perfect instruction.
 
-![Nexus Tech Welcome Email
-Mockup](./nexus-tech-welcome-email-mockup.png)
+<img src="https://github.com/obstie/Email-Dev/blob/Email_Template/Projects/Sketches/welcome%20email%2026.09.26.png?raw=true" alt="Project Screenshot" width="600">
 
 The intended hierarchy is:
 
@@ -54,9 +52,9 @@ compatibility techniques that normal web design does not always need.
 
 ------------------------------------------------------------------------
 
-# 3. What We Are Learning
+# 3. What I am Learning
 
-By the end of this project, we should be comfortable with:
+By the end of this project, I should be comfortable with:
 
 -   Clean email document structure
 -   A controlled 600px email container
@@ -81,9 +79,9 @@ By the end of this project, we should be comfortable with:
 
 ------------------------------------------------------------------------
 
-# 4. What We Are NOT Learning Yet
+# 4. What I am NOT Learning Yet
 
-Do not add these just because they exist.
+Not add these just because they exist.
 
 -   Media queries
 -   JavaScript
@@ -167,7 +165,7 @@ body
 Email development becomes much easier when you can look at the HTML and
 immediately understand what each section does.
 
-Do not build everything as one giant block.
+Will not build everything as one giant block.
 
 ------------------------------------------------------------------------
 
@@ -196,7 +194,7 @@ clients and gives Outlook a reliable table-based structure.
 
 # 8. Lesson 3 --- Outlook / MSO Structure
 
-We are continuing the ghost-table lesson from Project 1.
+I am continuing the ghost-table lesson from Project 1.
 
 Example:
 
@@ -222,7 +220,7 @@ Modern email clients see the modern HTML.
 
 Outlook receives the MSO fallback structure.
 
-We are building **one design with two compatible ways of describing its
+I are building **one design with two compatible ways of describing its
 layout**.
 
 ------------------------------------------------------------------------
@@ -266,7 +264,7 @@ the Outlook version should not randomly say:
 
 The "Why Nexus Tech?" section is our main layout practice.
 
-We want:
+I want:
 
 ``` text
 Repairs | Refurbished Laptops | Upgrades
@@ -336,7 +334,7 @@ If precise spacing matters, control it yourself.
 
 In Project 1, the "Buy Now!" element was visually styled as a paragraph.
 
-For this project, improve that.
+For this project, I wil improve that.
 
 A CTA should normally be a real link:
 
@@ -356,7 +354,7 @@ The visual styling comes second.
 
 # 13. CTA Lesson --- Start Simple
 
-Do not jump straight into a huge bulletproof-button system.
+Not jump straight into a huge bulletproof-button system.
 
 First understand:
 
@@ -375,7 +373,7 @@ with:
 -   border radius
 -   text-decoration
 
-Later we can learn more advanced Outlook-safe button techniques.
+Later I can learn more advanced Outlook-safe button techniques.
 
 ------------------------------------------------------------------------
 
@@ -523,7 +521,7 @@ CTA
 
 # 19. Lesson 13 --- Reusable Patterns
 
-Identify pieces that we will reuse later:
+Identify pieces that I will reuse later:
 
 -   600px container
 -   header
@@ -634,7 +632,7 @@ Never lose track of which `</td>` belongs to which column.
 
 ------------------------------------------------------------------------
 
-# 23. Project 1 Mistakes We Must Not Repeat
+# 23. Project 1 Mistakes I Must Not Repeat
 
 ### Missing Outlook `<td>`
 
@@ -681,7 +679,7 @@ Reset margins when precise spacing matters.
 
 ------------------------------------------------------------------------
 
-# 24. Project 1 Skills We Should Reuse
+# 24. Project 1 Skills I Should Reuse
 
 Reuse:
 
@@ -744,7 +742,7 @@ Do not build the whole email at once.
 
 ### Build first. Polish second.
 
-Do not spend an hour choosing a perfect icon or shadow while the HTML
+Not to spend an hour choosing a perfect icon or shadow while the HTML
 structure is still broken.
 
 Our order is:
@@ -824,24 +822,20 @@ The project is finished when:
 4.  The CTA is a real link.
 5.  Images are handled correctly.
 6.  The email can be tested.
-7.  We understand why the important code exists.
+7.  I understand why the important code exists.
 
-A perfect-looking email with code we do not understand is less useful
-than a slightly imperfect email that we can explain.
+A perfect-looking email with code I do not understand is less useful
+than a slightly imperfect email that I can explain.
 
 ------------------------------------------------------------------------
 
-# 30. Portfolio Goal
+# 30. Project Goal
 
-When finished, we should be able to say:
+When finished, I should be able to say:
 
 > "I built a welcome email for a fictional electronics and repair
 > company using HTML email techniques, inline CSS, Outlook conditional
 > comments, table-based fallbacks, image accessibility, and CTA links."
-
-That is more valuable than simply saying:
-
-> "I made an email."
 
 ------------------------------------------------------------------------
 
@@ -895,7 +889,7 @@ Automation / ESPs / templates / production workflows
 
 # 32. Important Learning-Path Rule
 
-**We do not need to learn everything before we start earning.**
+**I do not need to learn everything before I start earning.**
 
 The goal is to gradually build:
 
@@ -915,13 +909,13 @@ Small freelance work
 More advanced email development
 ```
 
-We will add technical skills as the projects require them.
+I will add technical skills as the projects require them.
 
 ------------------------------------------------------------------------
 
 # 33. Main Question for This Project
 
-At the end of this lesson, we should be able to answer:
+At the end of this lesson, I should be able to answer:
 
 > **"Can I explain what every major section of this email is doing, and
 > why I built it that way?"**
@@ -932,7 +926,7 @@ If yes, the lesson worked.
 
 ## Project Status
 
-**Status:** Not started\
+**Status:** Started on  28th September 2026 @ 21hrs\
 **Project:** Nexus Tech Welcome Email #2\
 **Current focus:** Structure → CTA → three-column layout → Outlook
 compatibility → accessibility → testing\
