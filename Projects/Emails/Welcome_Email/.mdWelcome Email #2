@@ -1,0 +1,940 @@
+# NEXUS TECH --- Welcome Email #2
+
+## Email Development Learning Project
+
+**Project type:** Welcome / promotional email\
+**Brand:** Nexus Tech\
+**Main goal:** Build a clean, production-minded email while
+strengthening the email-development fundamentals learned in the first
+Nexus Tech project.
+
+------------------------------------------------------------------------
+<img src="" alt="Project Screenshot" width="600">r
+## 1. Project Purpose
+
+This is the **second practical email in the Nexus Tech portfolio**.
+
+The first Nexus Tech email focused on promotional content, columns, and
+Outlook ghost-table structure.
+
+This project is intentionally simpler.
+
+The main lesson is:
+
+> **Build a clean email from a clear structure, control spacing, create
+> a proper CTA, and make the HTML easier to maintain.**
+
+We are not trying to make this email unnecessarily complicated.
+
+Each project should teach a small number of useful skills that we carry
+into the next project.
+
+------------------------------------------------------------------------
+
+## 2. Visual Reference / Mockup
+
+The mockup is a **design reference**, not a pixel-perfect instruction.
+
+![Nexus Tech Welcome Email
+Mockup](./nexus-tech-welcome-email-mockup.png)
+
+The intended hierarchy is:
+
+1.  Header / branding
+2.  Welcome message
+3.  10% discount offer
+4.  Main CTA
+5.  Why Nexus Tech?
+6.  Three service/value columns
+7.  Repair CTA
+8.  Footer
+
+The actual HTML may look different because email development requires
+compatibility techniques that normal web design does not always need.
+
+------------------------------------------------------------------------
+
+# 3. What We Are Learning
+
+By the end of this project, we should be comfortable with:
+
+-   Clean email document structure
+-   A controlled 600px email container
+-   Tables for reliable email layout
+-   Outlook/MSO conditional comments
+-   Ghost-table thinking
+-   Inline CSS
+-   Consistent spacing
+-   Paragraph margin resets
+-   Headings and text hierarchy
+-   Real links instead of fake buttons
+-   CTA construction
+-   Image handling
+-   `alt` text
+-   `display:block` for email images
+-   `max-width`
+-   Basic accessibility
+-   Reusable HTML patterns
+-   Comments that explain structure
+-   Keeping modern HTML and Outlook HTML structurally aligned
+-   Testing the finished email
+
+------------------------------------------------------------------------
+
+# 4. What We Are NOT Learning Yet
+
+Do not add these just because they exist.
+
+-   Media queries
+-   JavaScript
+-   Complex animations
+-   Advanced responsive systems
+-   Frameworks
+-   Complicated bulletproof button generators
+-   Dark-mode systems
+-   AMP email
+-   Advanced interactive email
+-   Backend/API integration
+-   Complicated personalization
+-   Huge product grids
+
+These can come later.
+
+For now, the goal is to become **really comfortable with the
+fundamentals**.
+
+------------------------------------------------------------------------
+
+# 5. Email Structure
+
+``` text
+EMAIL
+│
+├── Header
+│   ├── Nexus Tech logo/name
+│   └── Navigation / service links
+│
+├── Welcome Hero
+│   ├── "WELCOME TO NEXUS TECH"
+│   ├── "You're In!"
+│   └── Welcome paragraph
+│
+├── Offer Section
+│   ├── 10% OFF
+│   ├── Offer explanation
+│   └── CTA
+│
+├── Why Nexus Tech?
+│   ├── Repairs
+│   ├── Refurbished Laptops
+│   └── Upgrades
+│
+├── Repair CTA
+│   ├── Repair message
+│   ├── CTA
+│   └── Optional supporting image/icon
+│
+└── Footer
+    ├── Nexus Tech branding
+    ├── Tagline
+    ├── Social links
+    ├── Contact/help link
+    └── Copyright
+```
+
+------------------------------------------------------------------------
+
+# 6. Lesson 1 --- Start With Structure
+
+Before styling anything, build the HTML skeleton.
+
+Think:
+
+``` text
+body
+└── wrapper
+    └── 600px email container
+        ├── header
+        ├── welcome section
+        ├── offer section
+        ├── services section
+        ├── repair CTA
+        └── footer
+```
+
+### Why this matters
+
+Email development becomes much easier when you can look at the HTML and
+immediately understand what each section does.
+
+Do not build everything as one giant block.
+
+------------------------------------------------------------------------
+
+# 7. Lesson 2 --- 600px Email Container
+
+Continue using the controlled desktop email width learned in Project 1.
+
+Target:
+
+``` html
+width="600"
+```
+
+and/or:
+
+``` css
+max-width:600px;
+```
+
+The important lesson is not simply memorising `600px`.
+
+A controlled container makes the layout more predictable across email
+clients and gives Outlook a reliable table-based structure.
+
+------------------------------------------------------------------------
+
+# 8. Lesson 3 --- Outlook / MSO Structure
+
+We are continuing the ghost-table lesson from Project 1.
+
+Example:
+
+``` html
+<!--[if mso]>
+<table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<![endif]-->
+
+<!-- Modern email content -->
+
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+```
+
+### Mental model
+
+Modern email clients see the modern HTML.
+
+Outlook receives the MSO fallback structure.
+
+We are building **one design with two compatible ways of describing its
+layout**.
+
+------------------------------------------------------------------------
+
+# 9. Lesson 4 --- Keep Modern and Outlook Layouts Aligned
+
+One of the most important lessons from Project 1:
+
+If the modern version says:
+
+``` text
+3 columns
+```
+
+the Outlook version should also describe:
+
+``` text
+3 columns
+```
+
+If the modern version says:
+
+``` text
+50% + 50%
+```
+
+the Outlook version should not randomly say:
+
+``` text
+33% + 33%
+```
+
+### Rule
+
+> **Count the columns. Make the modern and MSO structures describe the
+> same layout.**
+
+------------------------------------------------------------------------
+
+# 10. Lesson 5 --- Three-Service Section
+
+The "Why Nexus Tech?" section is our main layout practice.
+
+We want:
+
+``` text
+Repairs | Refurbished Laptops | Upgrades
+```
+
+Each column can contain:
+
+-   icon/image
+-   heading
+-   short description
+
+Example:
+
+``` text
+[icon]
+
+Repairs
+
+Fast, reliable and
+professional service.
+```
+
+The learning is:
+
+-   three-column structure
+-   equal-width thinking
+-   vertical alignment
+-   spacing
+-   Outlook fallback
+-   inline-block/table-cell concepts
+-   consistent typography
+
+------------------------------------------------------------------------
+
+# 11. Lesson 6 --- Spacing and Paragraphs
+
+Stop relying on browser defaults.
+
+For example:
+
+``` html
+<p style="margin:0;">
+```
+
+or:
+
+``` html
+<p style="margin:0; padding:10px;">
+```
+
+### Why?
+
+Email clients can treat default margins differently.
+
+Think:
+
+``` text
+margin = outside spacing
+padding = inside spacing
+```
+
+If precise spacing matters, control it yourself.
+
+------------------------------------------------------------------------
+
+# 12. Lesson 7 --- Build a Real CTA
+
+In Project 1, the "Buy Now!" element was visually styled as a paragraph.
+
+For this project, improve that.
+
+A CTA should normally be a real link:
+
+``` html
+<a href="https://example.com"
+   style="...">
+    GET MY 10% OFF
+</a>
+```
+
+The user needs to be able to click it, activate it with keyboard
+navigation, and use it in a real email campaign.
+
+The visual styling comes second.
+
+------------------------------------------------------------------------
+
+# 13. CTA Lesson --- Start Simple
+
+Do not jump straight into a huge bulletproof-button system.
+
+First understand:
+
+``` html
+<a>
+```
+
+with:
+
+-   `href`
+-   `display`
+-   padding
+-   background colour
+-   text colour
+-   font styling
+-   border radius
+-   text-decoration
+
+Later we can learn more advanced Outlook-safe button techniques.
+
+------------------------------------------------------------------------
+
+# 14. Lesson 8 --- Images
+
+The mockup uses icons/graphics.
+
+For the actual project, images are useful because email development
+requires us to understand image behaviour.
+
+Practice:
+
+``` html
+<img
+    src="..."
+    alt="..."
+    width="..."
+    style="display:block; width:100%; max-width:...; height:auto;"
+>
+```
+
+Learn what each part does.
+
+### Important
+
+`alt` text provides information when:
+
+-   images are blocked
+-   a screen reader is being used
+-   an image fails to load
+
+------------------------------------------------------------------------
+
+# 15. Lesson 9 --- Do We Need Images?
+
+**Yes, this project can use images.**
+
+The mockup is **not a text-only email**.
+
+Keep image usage controlled.
+
+Suggested image roles:
+
+### Header
+
+Logo image or text-based logo.
+
+### Service section
+
+Three small icons:
+
+-   repair
+-   laptop/refurbished
+-   upgrade
+
+### Repair CTA
+
+One supporting laptop/repair illustration or icon.
+
+The goal is not to fill the email with images.
+
+The goal is to learn:
+
+> **How images work inside an email layout.**
+
+------------------------------------------------------------------------
+
+# 16. Lesson 10 --- Image Widths
+
+Do not repeat the previous project's problem where a product image had a
+very large HTML width while sitting inside a much smaller card.
+
+### Rule
+
+> **The image's declared dimensions should make sense for the space
+> where the image lives.**
+
+Make the HTML width and CSS width sensible for the actual component.
+
+------------------------------------------------------------------------
+
+# 17. Lesson 11 --- Accessibility Basics
+
+Introduce basic accessibility without turning it into a separate course.
+
+Practice:
+
+-   meaningful `alt` text
+-   real links
+-   logical heading hierarchy
+-   readable text
+-   sufficient contrast
+-   avoiding information that exists only inside an image
+
+Use:
+
+``` html
+role="presentation"
+```
+
+on layout tables where appropriate.
+
+The table is being used for layout, not to communicate data.
+
+------------------------------------------------------------------------
+
+# 18. Lesson 12 --- Typography
+
+Create a simple type hierarchy:
+
+``` text
+WELCOME TO NEXUS TECH
+        small label
+
+YOU'RE IN!
+        main heading
+
+Welcome paragraph
+        body text
+
+GET 10% OFF
+        offer heading
+
+GET MY 10% OFF
+        CTA
+```
+
+Do not use ten different font sizes.
+
+We are learning hierarchy:
+
+``` text
+small label
+↓
+main heading
+↓
+subheading
+↓
+body
+↓
+CTA
+```
+
+------------------------------------------------------------------------
+
+# 19. Lesson 13 --- Reusable Patterns
+
+Identify pieces that we will reuse later:
+
+-   600px container
+-   header
+-   two-column section
+-   three-column section
+-   CTA
+-   footer
+
+These become our personal email-development building blocks.
+
+------------------------------------------------------------------------
+
+# 20. Lesson 14 --- Comments
+
+Comments should explain **structure**, not obvious HTML.
+
+Good:
+
+``` html
+<!-- Three-column service section -->
+```
+
+Better:
+
+``` html
+<!--
+    Three-column services section.
+    Modern clients use inline-block columns.
+    Outlook receives the equivalent table cells.
+-->
+```
+
+Avoid:
+
+``` html
+<!-- this is a div -->
+```
+
+The goal is for our future self to understand **why the code exists**.
+
+------------------------------------------------------------------------
+
+# 21. Lesson 15 --- Debugging
+
+When something breaks, do not immediately rewrite everything.
+
+Use:
+
+``` text
+1. What is supposed to happen?
+2. What is actually happening?
+3. Which section causes the problem?
+4. Is the HTML structure valid?
+5. Are the opening/closing tags balanced?
+6. Is the modern layout correct?
+7. Is the MSO fallback correct?
+8. Are the widths consistent?
+9. Is spacing coming from a default margin?
+10. Test again.
+```
+
+This is a major email-development skill.
+
+------------------------------------------------------------------------
+
+# 22. Ghost Table Checklist
+
+Before calling a section finished:
+
+``` text
+<table>
+<tr>
+<td>
+content
+</td>
+</tr>
+</table>
+```
+
+Check:
+
+-   table opened?
+-   row opened?
+-   cell opened?
+-   cell closed?
+-   row closed?
+-   table closed?
+
+### Multiple columns
+
+Think:
+
+``` text
+<td>
+    Column 1
+</td>
+
+<td>
+    Column 2
+</td>
+
+<td>
+    Column 3
+</td>
+```
+
+Never lose track of which `</td>` belongs to which column.
+
+------------------------------------------------------------------------
+
+# 23. Project 1 Mistakes We Must Not Repeat
+
+### Missing Outlook `<td>`
+
+The previous product section lost the correct Outlook cell transition.
+
+The mental pattern should be:
+
+``` text
+open td
+→ product 1
+→ close td
+→ open td
+→ product 2
+→ close td
+→ open td
+→ product 3
+→ close td
+→ close tr
+→ close table
+```
+
+### Ghost table not fully closed
+
+Always check:
+
+``` html
+</td>
+</tr>
+</table>
+```
+
+### Width mismatch
+
+If the modern version uses approximately 200px columns, do not casually
+give Outlook a completely different width.
+
+### Fake CTA
+
+A visual button is not automatically a real link.
+
+### Default paragraph margins
+
+Reset margins when precise spacing matters.
+
+------------------------------------------------------------------------
+
+# 24. Project 1 Skills We Should Reuse
+
+Reuse:
+
+-   600px container
+-   Outlook conditional comments
+-   96 PPI Outlook setup
+-   ghost tables
+-   inline-block
+-   table-cell
+-   `font-size:0` where appropriate
+-   image handling
+-   alt text
+-   basic accessibility
+-   footer structure
+-   comments
+-   debugging process
+
+The goal is:
+
+> **Repeat the fundamentals until they become natural.**
+
+------------------------------------------------------------------------
+
+# 25. Project 2 New Skills
+
+  Skill                         Why we're learning it
+  ----------------------------- ---------------------------------------
+  Cleaner email structure       Makes future projects easier
+  Real CTA links                Makes buttons functional
+  Better spacing control        Prevents inconsistent rendering
+  Image sizing                  Prevents layout problems
+  Three-column service layout   Strengthens ghost-table skills
+  Accessibility basics          Makes emails more professional
+  Better comments               Makes code maintainable
+  Reusable sections             Speeds up future projects
+  Better debugging              Helps us solve problems independently
+
+------------------------------------------------------------------------
+
+# 26. Suggested Build Order
+
+Do not build the whole email at once.
+
+1.  Create DOCTYPE, `html`, `head`, and `body`.
+2.  Add Outlook 96 PPI setup.
+3.  Create the 600px main container.
+4.  Build the header.
+5.  Build the welcome section.
+6.  Build the 10% offer.
+7.  Build the CTA.
+8.  Build the "Why Nexus Tech?" section.
+9.  Build the three service columns.
+10. Build the repair CTA.
+11. Build the footer.
+12. Test and debug.
+
+------------------------------------------------------------------------
+
+# 27. Development Rule
+
+### Build first. Polish second.
+
+Do not spend an hour choosing a perfect icon or shadow while the HTML
+structure is still broken.
+
+Our order is:
+
+``` text
+STRUCTURE
+↓
+LAYOUT
+↓
+COMPATIBILITY
+↓
+SPACING
+↓
+TYPOGRAPHY
+↓
+IMAGES
+↓
+POLISH
+```
+
+------------------------------------------------------------------------
+
+# 28. Testing Checklist
+
+### HTML
+
+-   [ ] DOCTYPE present
+-   [ ] `<html>` correct
+-   [ ] `<head>` present
+-   [ ] viewport meta present
+-   [ ] body margins reset
+-   [ ] tags balanced
+-   [ ] tables balanced
+-   [ ] links have `href`
+-   [ ] images have `alt`
+
+### Layout
+
+-   [ ] Main container is controlled
+-   [ ] Sections are clearly separated
+-   [ ] Three columns line up
+-   [ ] Modern and Outlook structures match
+-   [ ] No accidental horizontal overflow
+-   [ ] Images stay inside their sections
+
+### CTA
+
+-   [ ] CTA is a real `<a>`
+-   [ ] CTA has a useful destination
+-   [ ] CTA text clearly describes the action
+
+### Outlook
+
+-   [ ] MSO conditional comments are correctly opened
+-   [ ] `<td>` elements are balanced
+-   [ ] `<tr>` is balanced
+-   [ ] `<table>` is balanced
+-   [ ] Widths make sense
+
+### Visual
+
+-   [ ] No debug background colours
+-   [ ] No placeholder text
+-   [ ] No accidental borders
+-   [ ] No broken images
+-   [ ] Spacing looks intentional
+
+------------------------------------------------------------------------
+
+# 29. What Counts as Finished?
+
+The project is finished when:
+
+1.  The HTML structure is clean.
+2.  The main sections are working.
+3.  The Outlook fallback structure makes sense.
+4.  The CTA is a real link.
+5.  Images are handled correctly.
+6.  The email can be tested.
+7.  We understand why the important code exists.
+
+A perfect-looking email with code we do not understand is less useful
+than a slightly imperfect email that we can explain.
+
+------------------------------------------------------------------------
+
+# 30. Portfolio Goal
+
+When finished, we should be able to say:
+
+> "I built a welcome email for a fictional electronics and repair
+> company using HTML email techniques, inline CSS, Outlook conditional
+> comments, table-based fallbacks, image accessibility, and CTA links."
+
+That is more valuable than simply saying:
+
+> "I made an email."
+
+------------------------------------------------------------------------
+
+# 31. What Comes After This?
+
+``` text
+PROJECT 1
+Promotional Email
+        ↓
+Ghost tables + columns
+        ↓
+PROJECT 2
+Welcome Email
+        ↓
+Clean structure + CTA + accessibility
+        ↓
+PROJECT 3
+Password Reset Email
+        ↓
+Transactional email structure
+        ↓
+PROJECT 4
+Repair Intake / Confirmation
+        ↓
+Information-heavy email layout
+        ↓
+PROJECT 5+
+Order confirmation
+Repair status
+Warranty reminder
+Upgrade offer
+Service complete
+Customer feedback
+Newsletter
+        ↓
+Later
+Responsive/mobile techniques
+Media queries
+        ↓
+Later
+Advanced Outlook buttons
+Dark mode
+Advanced accessibility
+Testing systems
+        ↓
+Eventually
+Automation / ESPs / templates / production workflows
+```
+
+------------------------------------------------------------------------
+
+# 32. Important Learning-Path Rule
+
+**We do not need to learn everything before we start earning.**
+
+The goal is to gradually build:
+
+``` text
+HTML email fundamentals
+        ↓
+Reliable layouts
+        ↓
+Portfolio projects
+        ↓
+Testing confidence
+        ↓
+Client-ready templates
+        ↓
+Small freelance work
+        ↓
+More advanced email development
+```
+
+We will add technical skills as the projects require them.
+
+------------------------------------------------------------------------
+
+# 33. Main Question for This Project
+
+At the end of this lesson, we should be able to answer:
+
+> **"Can I explain what every major section of this email is doing, and
+> why I built it that way?"**
+
+If yes, the lesson worked.
+
+------------------------------------------------------------------------
+
+## Project Status
+
+**Status:** Not started\
+**Project:** Nexus Tech Welcome Email #2\
+**Current focus:** Structure → CTA → three-column layout → Outlook
+compatibility → accessibility → testing\
+**Media queries:** Intentionally postponed\
+**Next step:** Build the HTML skeleton before styling

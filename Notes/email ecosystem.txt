@@ -1,0 +1,114 @@
+
+
+Don't aim for:
+
+"I need to finish 12 portfolio emails."
+
+Aim for:
+
+"Each email must teach me one or two new things."
+
+Your Nexus ecosystem could eventually become:
+
+Project	Main lesson
+
+Promotional Email	            Ghost tables + columns
+Welcome Email	                    Clean structure + CTA
+Password Reset	                Transactional layout
+Repair Intake	                    Data/information layout
+Repair Status	                Status/progress layout
+Order Confirmation	                Tables + structured information
+Abandoned Cart	                Product + CTA
+Upgrade Offer	                 Promotional layout
+Warranty Reminder	            Content hierarchy
+Service Complete	                Transactional + promotional
+Customer Feedback	            Forms/CTA limitations
+Newsletter	                        More complex content structure
+
+Your learning path from here
+
+I'd keep you on this track:
+
+🟢 Now — Finish Project 1
+
+Goal: understand and repair your mistakes.
+
+Don't perfect it.
+
+🟢 Project 2 — Welcome Email
+
+Goal: rebuild the fundamentals without copying.
+
+Focus on:
+
+container
+spacing
+typography
+images
+links
+CTA
+one/two-column layouts
+ghost tables
+Outlook fallbacks
+🟢 Project 3 — Password Reset
+
+This one becomes much simpler.
+
+You'll learn how to make an email that looks professional without needing lots of design.
+
+Focus on:
+
+hierarchy
+typography
+CTA
+spacing
+accessibility
+fallback thinking
+🟢 Project 4 — Repair Confirmation
+
+This is where we start getting more interesting:
+
+Repair Request Received
+
+Ticket #NT-1042
+
+Device
+Dell XPS 13
+
+Issue
+Laptop won't power on
+
+Status
+Diagnostic
+
+[ VIEW REPAIR STATUS ]
+
+You'll learn how to create information-based layouts, rather than just promotional ones.
+
+🟡 THEN — Media Queries
+
+Only after you've built several layouts using the techniques you already know.
+
+And when we get there, I don't want you learning media queries as some giant separate subject.
+
+We'll simply learn:
+
+What problem does this solve?
+
+For example:
+
+Desktop:
+
+IMAGE | TEXT
+
+
+Mobile:
+
+IMAGE
+TEXT
+
+Then:
+
+"Okay, how do we tell the email client to change that?"
+
+That's when we introduce media queries.
