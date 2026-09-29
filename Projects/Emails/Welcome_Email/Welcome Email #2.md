@@ -932,3 +932,6 @@ If yes, the lesson worked.
 compatibility → accessibility → testing\
 **Media queries:** Intentionally postponed\
 **Next step:** Build the HTML skeleton before styling
+
+**Notes:**
+“I started this project because I wanted to understand how email developers build layouts that still work in Outlook. In my first version, I thought the three columns were correct, but I realised my Outlook ``` <td> ``` structure wasn't matching my modern layout...”
