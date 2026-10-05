@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Email#2</title>
-</head>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Welcome Email#2</title> 
+</head> 
 
-<!-- [1] the body container is the email environment, we remove all
-    unwanted things that the email client/browser add.
-    The big ones are default margin and padding -->
-<body style="margin: 0; padding: 0; background-color: rgb(202, 202, 201);">
+<!-- [1] the body container is the email environment, we remove all 
+    unwanted things that the email client/browser add. 
+    The big ones are default margin and padding --> 
+<body style="margin: 0; padding: 0; background-color: rgb(202, 202, 201);"> 
 
-<!-- [2] the email boundary, We need our email to have a predictable width and be centred. -->    
-    <div class="wrapper" style="max-width: 600px; margin: 0 auto;">
+    <div class="wrapper" style="max-width: 600px; margin: 0 auto; padding-top: 20px; border: 2px solid white;"> 
 
-<!-- [3] This is where our actual email content starts being controlled.
-    width: 100%          Use the available width.
-    max-width: 600px     But don't exceed 600px.
-    margin: 0 auto       Centre it.-->       
-        <div class="content_wrapper" style="width: 100%; max-width: 600px; margin: 0 auto;">
+<!-- [3] This is where our actual email content starts being controlled. 
+    width: 100%          Use the available width. 
+    max-width: 600px     But don't exceed 600px. 
+    margin: 0 auto       Centre it.-->        
+        <div class="email_content" style="width: 100%; max-width: 600px; margin: 0 auto; padding: 10px; border: 2px solid green; box-sizing: border-box;"> 
+            <div class="header" style="width: 100%; background-color: #ffffff; font-size: 0; border: 2px solid red;"> <!-- we add font size 0, with inline-block elements,
+            whitespace between the elements in the HTML can create a small gap and then restore the font size inside the children.-->
+                <div class="logo" style="width: 35%; font-size: 16px; vertical-align: middle; display: inline-block;">
+                    <a href="https://stick-chain-64253516.figma.site/#enterprise" target="_blank" style="display: inline-block; text-decoration: none; border: 0;">
+                        <img src="assets/logo.jpg" alt="Nexus Tech" width="180" height="auto" style="display: block; width: 100%; max-width: 180px; height: auto; border: none; outline: none;">
+                    </a>
+                </div>
 
-        </div>
+                <div class="nav_links" style="width: 55%; font-size: 16px; vertical-align: middle; display: inline-block; text-align: right; font-size: 17px;">
+                    <a href="https://stick-chain-64253516.figma.site/#top" style="text-decoration: none; color: cornflowerblue;">Repairs</a>
+                    <span style="color: #0c0c0c; padding: 0 8px; vertical-align: middle; ">|</span>
+                    <a href="https://stick-chain-64253516.figma.site/#top" style="text-decoration: none; color: cornflowerblue;">Refurbished</a>
+                    <span style="color: #0c0c0c; padding: 0 8px; vertical-align: middle; ">|</span>
+                    <a href="https://stick-chain-64253516.figma.site/#top" style="text-decoration: none; color: cornflowerblue;">Upgrades</a>
+                </div>
+            </div> 
 
-    </div>
-    
-</body>
-</html>
+        </div> 
+
+    </div> 
+
+</body> 
+</html> 
